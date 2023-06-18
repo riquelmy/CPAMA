@@ -1,4 +1,4 @@
-/*Algoritmo para concatenar os n primeiros elementos da segunda string à primeira*/
+/*strncat - Algoritmo para concatenar os n primeiros elementos da segunda string à primeira*/
 #include <stdio.h>
 #define T 100
 int main(void)
@@ -17,7 +17,7 @@ int main(void)
     {
         ncar1++;
     }
-    ncar1-=2;/*Tirar 1 da newline e 1 para encontrar o index do último caractere*/
+    ncar1-=2;/*Tirar 1 da newline do fgets e 1 para encontrar o index do último caractere*/
     
     for (iC=0;texto2[iC]!='\0'&&iC<=nel;iC++)
     {

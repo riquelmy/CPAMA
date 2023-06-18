@@ -1,4 +1,4 @@
-/*Algoritmo para calcular tamanho da string*/
+/*strlen - Algoritmo para calcular tamanho da string*/
 #include <stdio.h>
 #define T 100
 int main(void)

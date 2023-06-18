@@ -1,4 +1,4 @@
-/*Algoritmo para concatenar/juntar strings*/
+/*strcat - Algoritmo para concatenar/juntar strings*/
 #include <stdio.h>
 #define T 100
 int main(void)
