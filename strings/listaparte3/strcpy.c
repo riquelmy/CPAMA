@@ -1,4 +1,4 @@
-/*Algoritmo para copiar toda segunda string para a primeira*/
+/*strcpy - Algoritmo para copiar toda segunda string para a primeira*/
 #include <stdio.h>
 #define T 100
 int main(void)

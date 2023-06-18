@@ -24,4 +24,6 @@ int main(void)
 
 
     printf("%s", texto1);
+
+    return 0;
 }

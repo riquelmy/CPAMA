@@ -13,4 +13,6 @@ int main(void)
     }
     ncar-=1;
     printf("%d\n", ncar);
+
+    return 0;
 }
