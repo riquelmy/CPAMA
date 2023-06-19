@@ -1,4 +1,4 @@
-/*Algoritmo para calcular tamanho da string*/
+/*Algoritmo do palíndrome*/
 #include <stdio.h>
 #define T 100
 int main(void)
