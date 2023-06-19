@@ -2,19 +2,20 @@
 #define T 100
 int main(void)
 {
-    char texto[T], car;
-    int iC, vezes=0;
-    
-    printf("Digite o texto:\n");
-    fgets(texto, T, stdin);
-    printf("Digite o caractere:\n");
-    scanf("%c", &car);
+    char texto1[T];
+    char x;
+    int iC, nOcorrencias=0;
 
-    for (iC=0;texto[iC]!='\0';iC++)
+    fgets(texto1, T, stdin);
+    scanf("%c", &x);
+
+    for (iC=0;texto1[iC]!='\0';iC++)
     {
-        if (texto[iC]==car) {vezes++;}
+        if (texto1[iC]==x) {nOcorrencias++;}
     }
 
-    printf("%c acontece %d vezes", car, vezes);
+    printf("%c ocorre %d vezes\n", x, nOcorrencias);
+
     return 0;
+
 }
