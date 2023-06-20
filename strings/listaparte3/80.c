@@ -1,3 +1,4 @@
+/*Questão 80*/
 #include <stdio.h>
 #define T 100
 int main(void)

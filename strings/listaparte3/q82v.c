@@ -1,10 +1,11 @@
-/*Questão 81*/
+/*Questão 82 - No caso, esse imprime apenas o número de caracteres da maior palavra*/
 #include <stdio.h>
 #define T 100
 int main(void)
 {
     char texto1[T], textoN[T];
     int iC, jC=0;
+    int bword=0, tword=0;//bigword, tempword
     
     fgets(texto1, T, stdin);
     
@@ -23,10 +24,23 @@ int main(void)
         }
     }
     
-    for (iC=0;textoN[iC]!='\0';iC++)
+    for(iC=0;textoN[iC]!='\0';iC++)
     {
-        printf("%c", textoN[iC]);
+        if (textoN[iC]!=32) 
+        {
+            tword++;
+            if(textoN[iC+1]=='\n')
+            {if (tword>=bword) {bword=tword;}}
+        }
+        else if (textoN[iC]==32)
+        {
+            if (tword>=bword) {bword=tword;}
+            tword=0;
+        }
+
     }
+
+    printf("%d", bword);
     
     return 0;
 }
