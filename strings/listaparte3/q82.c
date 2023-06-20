@@ -36,7 +36,7 @@ int main(void)
             tword++;
             if(textoN[iC+1]=='\n')
             {
-                indy=iC-1;
+                indy=iC;
                 if(tword>=bword) {bword=tword; xF=indx; yF=indy;}
             }
         }
